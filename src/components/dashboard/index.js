@@ -4,6 +4,7 @@ import { Alert, Button, Divider, Drawer } from 'rsuite';
 import { useProfile } from '../../context/profile.context';
 import { database } from '../../misc/firebase';
 import InputEditable from '../InputEditable';
+import AvatarUploadBtn from './AvatarUploadBtn';
 import ProviderBlock from './ProviderBlock';
 
 const Dashboard = ({ onSignOut }) => {
@@ -30,14 +31,15 @@ const Dashboard = ({ onSignOut }) => {
       <Drawer.Body>
         <h3>Hey! {profile.name}</h3>
         <Divider />
-        <ProviderBlock />
-        <Divider />
         <InputEditable
           name="nickname"
           initialValue={profile.name}
           onSave={onSave}
           label={<h6 className="mb-2">Nickname</h6>}
         />
+        <AvatarUploadBtn />
+        <Divider>Link this Chat to other account</Divider>
+        <ProviderBlock />
       </Drawer.Body>
 
       <Drawer.Footer>

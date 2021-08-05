@@ -1,4 +1,4 @@
-/* eslint-disable  */
+/* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
 import { Alert, Button, Icon, Tag } from 'rsuite';
 import firebase from 'firebase/app';
