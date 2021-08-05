@@ -27,13 +27,13 @@ const InputEditable = ({
 
     if (trimmed === '') {
       Alert.info(emptyMsg, 4000);
+      setEditable(true);
     }
 
-    if (trimmed !== initialValue) {
+    if (trimmed !== initialValue && trimmed !== '') {
       await onSave(trimmed);
+      setEditable(false);
     }
-
-    setEditable(false);
   };
 
   return (
