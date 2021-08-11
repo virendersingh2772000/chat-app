@@ -213,7 +213,7 @@ const Messages = () => {
           </Button>
         </li>
       )}
-      {isChatEmpty && <li>No messages yet</li>}
+      {isChatEmpty && <li className="text-center mt-page">No messages yet</li>}
       {canShowMessages && renderMessages()}
     </ul>
   );

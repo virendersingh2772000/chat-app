@@ -84,6 +84,22 @@ $chat-b: 65px;
   }
 }
 
+.navback {
+  background-color: #2196f3;
+}
+
+.btnpadding {
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+}
+
+.titlepadding {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
 .animate-blink {
   animation: blink normal 1.5s infinite ease-in-out;
   color: red !important;
